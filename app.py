@@ -1,5 +1,5 @@
 
-import base64
+import pybase64
 import datetime
 import io
 
@@ -47,7 +47,7 @@ def parse_contents(contents, filename, date):
     
     content_type, content_string = contents.split(',')
 
-    decoded = base64.b64decode(content_string)
+    decoded = pybase64.b64decode(content_string)
     try:
         if 'csv' in filename:
             # Assume that the user uploaded a CSV file
