@@ -23,8 +23,7 @@ pytz==2018.4
 six==1.11.0
 traitlets==4.3.2
 Werkzeug==0.14.1
-pybase64
-dash_table
-datetime
-io
+pybase64==0.5.0
+dash_table==3.1.11
+
 
