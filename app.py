@@ -299,7 +299,7 @@ def update_output(contents):
                 html.h5(html.P("Wrong file upload"))
             ])
 
-app.scripts.config.serve_locally = True
+app.scripts.config.serve_locally = False
 
 
 if __name__ == '__main__':
