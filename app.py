@@ -6,6 +6,7 @@ Created on Sun Apr  7 22:32:55 2019
 @author: john.ekedum@ibm.com
 """
 import dash
+import io
 import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
@@ -299,7 +300,7 @@ def update_output(contents):
                 html.h5(html.P("Wrong file upload"))
             ])
 
-app.scripts.config.serve_locally = False
+app.scripts.config.serve_locally = True
 
 
 if __name__ == '__main__':
