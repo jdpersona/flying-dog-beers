@@ -13,9 +13,9 @@ import plotly
 from dash.dependencies import Input, Output, State
 import pybase64
 import pandas as pd
-import plotly
-from knackpy import Knack
 import knackpy
+from knackpy import Knack
+
 
 
 
