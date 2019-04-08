@@ -26,4 +26,5 @@ Werkzeug==0.14.1
 pybase64
 dash_table
 datetime
+io
 
