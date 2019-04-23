@@ -22,7 +22,7 @@ from knackpy import Knack
 
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = [
-
+      ['designresearch', 'Knackpy707']
 ]
 
 
@@ -198,7 +198,6 @@ def update_output(contents):
         if 'csv' in content_type:
             knack_csv = pd.read_csv(io.StringIO(pybase64.b64decode(content_string).decode('utf-8')))
             knack_db = pd.DataFrame(kn.data)
-            knack_db.drop('Email',  axis=1, inplace=True)
             knack_db['LinkedIn profile'] = knack_db['LinkedIn profile_url']
             #rename knack data to fit the new data
             knack_db.rename(columns={'Participant Name_first': 'First','Participant Name_last':'Last' ,
