@@ -22,7 +22,7 @@ from knackpy import Knack
 
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = [
-      ['designresearch', 'Knackpy707']
+      ['********', '*****']
 ]
 
 
@@ -190,8 +190,8 @@ def display_page(pathname):
 def update_output(contents):
     kn = Knack(
           obj='object_17',
-          app_id='59ca76c0e4c83424df3eee62',
-          api_key='a0998110-a889-11e7-9b23-7d5afe966012 '
+          app_id='***********',
+          api_key='*******************'
         )# added
     if contents is not None:
         content_type, content_string = contents.split(',')
